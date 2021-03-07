@@ -20,21 +20,42 @@
     height: 3rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
-.contenedor ul .lista  {
+.contenedor .nav ul .lista {
     color: white;
     /* background: blue; */
     font-size: .8rem;
     text-align: center;
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
+.contenedor .menu ul .lista {
+    position: relative;
+    width: auto;
+    height: 1.4rem;
+}
 
-.contenedor ul .lista a {
+.contenedor .menu ul .lista:hover::before{
+    width: 100%;
+} 
+
+.contenedor .menu ul .lista::before {
+    content: '';
+    height: 1px;
+    width: 0%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+/* .contenedor ul .lista a {
      color: white;
      margin: 0 2rem;
-}   
+}    */
+
 
